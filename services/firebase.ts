@@ -5,14 +5,14 @@ import { MoodEntry, Goal } from "../types";
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA7kW8wJJjviPPqf1bbzvhNJLWloyfxSkE",
-  authDomain: "manam-ai.firebaseapp.com",
-  databaseURL: "https://manam-ai-default-rtdb.firebaseio.com/",
-  projectId: "manam-ai",
-  storageBucket: "manam-ai.firebasestorage.app",
-  messagingSenderId: "305963698989",
-  appId: "1:305963698989:web:8f6e87091379f8ce4161a4",
-  measurementId: "G-0V4WB46HDE"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.authDomain,
+  databaseURL: process.env.databaseURL,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId
 };
 
 // Initialize Firebase
