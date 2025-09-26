@@ -11,16 +11,6 @@ export default defineConfig(({ mode }) => {
       },
       plugins: [react()],
       define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.FIREBASE_API_KEY': JSON.stringify(env.Firebase_API_KEY),
-        'process.env.authDomain': JSON.stringify(env.authDomain),
-        'process.env.databaseURL': JSON.stringify(env.databaseURL),
-        'process.env.projectId': JSON.stringify(env.projectId),
-        'process.env.storageBucket': JSON.stringify(env.storageBucket),
-        'process.env.appId': JSON.stringify(env.appId),
-        'process.env.messagingSenderId': JSON.stringify(env.messagingSenderId),
-        'process.env.measurementId': JSON.stringify(env.measurementId),
       },
       resolve: {
         alias: {
